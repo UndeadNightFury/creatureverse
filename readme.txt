@@ -30,6 +30,7 @@ Naga(Coming Soon)
 Human(Coming Soon)
 ---
 {Planed Chnages}
+None!
 ---
 {Bugs}
 None!
