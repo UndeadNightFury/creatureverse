@@ -89,6 +89,7 @@ Slit your own throat = slit_own_throat.png
 Stab her heart = stab_her_heart.png
 Stab his heart = stab_his_heart.png
 Stab your own heart = stab_own_heart.png
+Time travel = time_tavel.png
 Wait for acid to finish eating you = wait_acid.png
 Wait for death = wait_death.png
 ---
