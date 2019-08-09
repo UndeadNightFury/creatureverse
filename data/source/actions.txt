@@ -77,6 +77,7 @@ Rip your own head off = rip_own_head.png
 Rip out your own heart = rip_own_heart.png
 Rip out your own lungs = rip_own_lungs.png
 Run = run.png
+Share heart = share_heart.png
 Shoot her through the heart = shoot_her_heart.png
 Shoot him through the heart = shoot_him_heart.png
 Shoot yourself through the heart = shoot_own_heart.png
