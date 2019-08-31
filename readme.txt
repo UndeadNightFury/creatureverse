@@ -1,5 +1,5 @@
 {Version}
-vAlpha Dev 0.1.1.1
+vAlpha Dev 0.1.1.2
 ---
 {Current Features}
 Genders
@@ -30,7 +30,7 @@ Naga(Coming Soon)
 Human(Coming Soon)
 ---
 {Planed Chnages}
-None!
+Removal of the buttons
 ---
 {Bugs}
 None!
