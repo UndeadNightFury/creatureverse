@@ -15,6 +15,7 @@ a{font-family: Starcraft, Verdana, sans-serif; font-size: 24pt; color: gold;}
 .coming-soon {font-size:16pt; font-style: italic; font-weight:bold;}
 .link {font-size:18pt; font-style: italic;}
 .warning {content:url(data/img/ui/warning.png); width: 70%;}
+#sfw-link{font-size:12pt;}
 
 /*testing*/
 .incomplete {content:url(data/img/ui/warning.png); width: 70%;}
