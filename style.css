@@ -7,14 +7,15 @@ html{background-color: dimgrey}
 p{color: midnightblue; font-family: Verdana, sans-serif;}
 a{font-family: Starcraft, Verdana, sans-serif; font-size: 24pt; color: gold;}
 .small-text {font-size:10pt;}
-.disclaimer-text {font-size:7pt;}
+.disclaimer-text {font-size:10pt;}
 .large-text {font-size:18pt;}
 .title-text {font-size:30pt;}
-.warning-text {font-size:20pt; font-style: italic; font-weight:bold;}
+.warning-text {font-size:18pt; font-style: italic; font-weight:bold;}
 .choose-text {font-size:20pt;}
 .coming-soon {font-size:16pt; font-style: italic; font-weight:bold;}
 .link {font-size:18pt; font-style: italic;}
 .warning {content:url(data/img/ui/warning.png); width: 70%;}
+#sfw-link{font-size:12pt;}
 
 /*testing*/
 .incomplete {content:url(data/img/ui/warning.png); width: 70%;}

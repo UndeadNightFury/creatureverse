@@ -1,8 +1,11 @@
 /*importing Starcraft font for use*/
-@import url("font/font_family.css");
+@import url("../font/font_family.css");
 
+body {padding-left: 10%; padding-right: 10%}
+
+html{background-color: dimgrey}
 p{color: midnightblue; font-family: Verdana, sans-serif;}
-a{font-family: Verdana, sans-serif; font-size:18pt; color:black;}
-h1,h2,h3,h4,h5,h6{font-family: Starcraft, Verdana, sans-serif; font-style:italic;}
+a{font-family: Starcraft, Verdana, sans-serif; font-size:18pt; color:gold;}
+h1,h2,h3,h4,h5,h6{font-family: Starcraft, Verdana, sans-serif; font-style:italic; color:black;}
 
 .link{font-style:normal;}
