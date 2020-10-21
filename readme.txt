@@ -1,5 +1,5 @@
 {Version}
-vAlpha Dev 0.1.1.3
+vAlpha Dev 0.1.1.4
 ---
 {Current Features}
 Genders
@@ -12,13 +12,13 @@ Ability to become a werewolf on on specie paths
 ---
 {Species}
 Night Fury
-Light Fury
-Night Light(Coming Soon)
 Indoraptor
-Velociraptor(Coming Soon)
 Tyrannosaurus Rex
+Light Fury(Coming Soon)
+Night Light(Coming Soon)
+Velociraptor(Coming Soon)
 Indominus Rex(Coming Soon)
-Xenomorph
+Xenomorph(Coming Soon)
 Spider(Coming Soon)
 High Elf(Coming Soon)
 Air Elf(Coming Soon)
