@@ -30,7 +30,7 @@ Naga(Coming Soon)
 Human(Coming Soon)
 ---
 {Planed Chnages}
-Removal of the buttons
+Removal of the buttons(In Progress)
 ---
 {Bugs}
 None!

@@ -11,14 +11,30 @@ html{
 }
 
 p{
+    font-size: 12;
 	color: midnightblue;
 	font-family: Verdana, sans-serif;
+}
+
+p1{
+    font-size: 12;
+	color: black;
+	font-family: Verdana;
+}
+
+p2 {
+    color: black;
+    font-family: Verdana;
 }
 
 a{
 	font-family: Starcraft, Verdana, sans-serif;
 	font-size: 24pt;
 	color: gold;
+}
+
+hr {
+     border: 1px solid black;
 }
 
 .small-text {
@@ -50,6 +66,10 @@ a{
 	font-size:16pt;
 	font-style: italic;
 	font-weight:bold;
+}
+
+.literature {
+    font-size:12pt;
 }
 
 .link {

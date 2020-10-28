@@ -7,18 +7,18 @@ body {
 }
 
 html{
-	background-color: dimgrey
+	background-color: black
 }
 
 p{
-	color: midnightblue;
+	color: brown;
 	font-family: Verdana, sans-serif;
 }
 
 a{
 	font-family: Starcraft, Verdana, sans-serif;
 	font-size: 24pt;
-	color: gold;
+	color: green;
 }
 
 .small-text {
