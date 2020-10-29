@@ -22,46 +22,53 @@ a{
 }
 
 .small-text {
-	font-size:10pt;
+	font-size: 10pt;
 }
 
 .disclaimer-text {
-	font-size:10pt;
+	font-size: 10pt;
 }
 
 .large-text {
-	font-size:18pt;
+	font-size: 18pt;
 }
 
 .title-text {
-	font-size:30pt;
+	font-size: 30pt;
 }
 
 .warning-text {
-	font-size:18pt;
+	font-size: 18pt;
 	font-style: italic;
-	font-weight:bold;
+	font-weight: bold;
 }
 
 .choose-text {
-	font-size:20pt;
+	font-size: 20pt;
 }
 .coming-soon {
-	font-size:16pt;
+	font-size: 16pt;
 	font-style: italic;
-	font-weight:bold;
+	font-weight: bold;
+}
+
+.rewrite {
+	font-size: 16pt;
+	font-style: italic;
+	font-weight: bold;
+	color: grey;
 }
 
 .link {
-	font-size:18pt;
+	font-size: 18pt;
 	font-style: italic;
 }
 
-.warning, .incomplete {
+.incomplete, .warning {
 	content:url(data/img/ui/warning.png);
 	width: 70%;
 }
 
 #sfw-link{
-	font-size:12pt;
+	font-size: 12pt;
 }

@@ -47,3 +47,16 @@ ol, ul {
 .link{
 	font-style:normal;
 }
+
+div.more{
+	color: brown;
+	font-size: 15;
+	font-style: italic;
+	text-decoration: none;
+}
+
+.coming-soon {
+	font-size: 16pt;
+	font-style: italic;
+	font-weight: bold;
+}
