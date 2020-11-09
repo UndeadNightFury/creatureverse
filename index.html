@@ -20,7 +20,26 @@ Warning: Before progressing further, please read the following: This is a Narrat
 </p>
 
 <p align="center">
-<a href="data/species.html"><img src="data/img/ui/play_game.png" alt="Play Game" height="50" width="230" /></a>
+<a id="species" href="data/species.html"><img src="data/img/ui/play_game.png" alt="Play Game" height="50" width="230" /></a>
+</p>
+
+<p align="center">
+
+<button onclick="myFunction()">Play Game</button><br>
+
+<button onclick="myFunction()" ><img src="data/img/ui/play_game.png" alt="Play Game" height="50" width="230"></button>
+
+<script>
+function myFunction() {
+  var r = confirm("Warning: Before progressing further, please read the following: This is a Narrative driven story that has been made to be realistic, as such there is a heavy presence of violence, gore, torture and other NSFW themes. It is strongly recommended that anybody not accustomed to these should not progress further as some scenes may cause distress!");
+  if (r == true) {
+	console.log("r")
+	var x = document.getElementById("species").href;
+  } else {
+    console.log("s")
+  }
+}
+</script><span class="coming-soon">(This is an experimental JavaScript test)</span>
 </p>
 
 <p align="center">
@@ -36,7 +55,7 @@ Warning: Before progressing further, please read the following: This is a Narrat
 </p>
 
 <p>
-<a href="manual/manual.html"><img src="data/img/ui/manual.png" alt="Manual" height="40" width="200" /></a><span class="coming-soon">(Warning: This is still a major work in progress!)</span>
+<a href="manual/manual.html"><img src="data/img/ui/manual.png" alt="Manual" height="40" width="200" /></a>
 </p>
 
 <p>

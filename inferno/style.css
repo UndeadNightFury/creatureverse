@@ -11,19 +11,26 @@ html{
 }
 
 p{
-    font-size: 12;
+	font-size: 12pt;
 	color: midnightblue;
 	font-family: Verdana, sans-serif;
 }
 
 p1{
-    font-size: 12;
+	font-size: 12pt;
 	color: black;
 	font-family: Verdana;
 }
 
-p2 {
+p2{
     color: black;
+    font-family: Verdana;
+}
+
+div.p3{
+    color: black;
+    text-align: center;
+    font-size: 18pt;
     font-family: Verdana;
 }
 
@@ -39,6 +46,13 @@ hr {
 
 .small-text {
 	font-size:10pt;
+}
+
+.small-text2 {
+	font-size: 8pt;
+	font-style: italic;
+	font-weight: bold;
+	text-align: center;
 }
 
 .disclaimer-text {
