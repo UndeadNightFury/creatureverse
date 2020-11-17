@@ -16,30 +16,23 @@ A story driven narrative based solely on the choices you make here. Here you can
 </p>
 
 <p class="warning-text">
-Warning: Before progressing further, please read the following: This is a Narrative driven story that has been made to be realistic, as such there is a heavy presence of violence, gore, torture and other NSFW themes. It is strongly recommended that anybody not accustomed to these should not progress further as some scenes may cause distress!
-</p>
-
-<p align="center">
-<a id="species" href="data/species.html"><img src="data/img/ui/play_game.png" alt="Play Game" height="50" width="230" /></a>
+This website uses cookies to function. By continuing to use the site, you accept saving them to your computer. The cookies we use are purely for functional purposes. We do not use cookies for targeted advertisement, tracking info, or transformation.
 </p>
 
 <p align="center">
 
-<button onclick="myFunction()">Play Game</button><br>
-
-<button onclick="myFunction()" ><img src="data/img/ui/play_game.png" alt="Play Game" height="50" width="230"></button>
+<button class="btn" onclick="myFunction()" ><img src="data/img/ui/play_game.png" alt="Play Game" height="50" width="230"></button>
 
 <script>
 function myFunction() {
   var r = confirm("Warning: Before progressing further, please read the following: This is a Narrative driven story that has been made to be realistic, as such there is a heavy presence of violence, gore, torture and other NSFW themes. It is strongly recommended that anybody not accustomed to these should not progress further as some scenes may cause distress!");
   if (r == true) {
-	console.log("r")
-	var x = document.getElementById("species").href;
+	window.location.href = "data/species.html";
   } else {
-    console.log("s")
   }
 }
-</script><span class="coming-soon">(This is an experimental JavaScript test)</span>
+
+</script>
 </p>
 
 <p align="center">
@@ -70,7 +63,7 @@ function myFunction() {
 
 <p class="small-text" align="left">
 <i>
-Version: Alpha Dev Build: 0.1.1.4
+Version: Alpha Dev Build: 0.2.0.0
 </i>
 </p>
 
@@ -80,7 +73,21 @@ Version: Alpha Dev Build: 0.1.1.4
 
 
 <p class="disclaimer-text" align="center">
-<i><b>Disclaimer:</b> Some of the species featured here in CreatureVerse are the intellectual properties of Metro-Goldwyn-Mayer, 20th Century Fox, DreamWorks Studios, Universal Studios, Hasbro, Blizzard Studios and the BBC. As such I do not profit from these properties and all use as such is purely for entertainment purposes.</i>
+<i><b>Disclaimer:</b> Some of the species featured here in CreatureVerse are the intellectual properties of Metro-Goldwyn-Mayer, 20th Century Fox, DreamWorks Studios, Universal Studios, Hasbro, Blizzard Studios and the BBC. As such I do not profit from these properties and all use as such is purely for entertainment purposes. This game is not endorsed by the trademark owners.</i>
 </p>
+<div id="cookie-banner" style="display: none">
+<p>
+    By using our website, you agree to our 
+    <a href="">cookie policy</a>
+	<button class="close">&times;</button>
+  </p>
+</div>
+<script>
+if (localStorage.getItem('cookieSeen') != 'shown') {
+  document.getElementById('cookie-banner').style.display = "none";
+  localStorage.setItem('cookieSeen','shown');
+}
+})
+</script>
 </body>
 </html>
