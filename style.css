@@ -85,7 +85,7 @@ a{
 	outline:none
 }
 
-.cookie-banner {
+#cookie-banner {
   position: fixed;
   bottom: 40px;
   left: 10%;

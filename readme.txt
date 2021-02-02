@@ -1,5 +1,5 @@
 {Version}
-vAlpha Dev 0.2.0.0
+vAlpha Dev 0.2.0.1
 ---
 {Current Features}
 Genders
@@ -8,29 +8,20 @@ Undeath
 ---
 {Planed Features}
 Ability to become a dragon on other specie paths
-Ability to become a werewolf on on specie paths
+Ability to become a werewolf on other specie paths
 ---
 {Species}
 Night Fury
 Indoraptor
 Tyrannosaurus Rex
-Light Fury(Coming Soon)
-Night Light(Coming Soon)
-Velociraptor(Coming Soon)
-Indominus Rex(Coming Soon)
-Xenomorph(Coming Soon)
-Spider(Coming Soon)
-High Elf(Coming Soon)
-Air Elf(Coming Soon)
-Earth Elf(Coming Soon)
-Fire Elf(Coming Soon)
-Water Elf(Coming Soon)
-Basilisk(Coming Soon)
-Naga(Coming Soon)
-Human(Coming Soon)
+Great Wyrm
 ---
 {Planed Chnages}
-Removal of the buttons(In Progress)
+Official Icon
+Cookie Banner
+New Path System
+JavaScript Overhaul
+Cookies
 ---
 {Bugs}
 None!
