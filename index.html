@@ -2,8 +2,9 @@
 <head>
 <link rel="stylesheet" type="text/css" href="style.css">
 <link rel="icon" href="data/img/ui/icon.png" type="image/png" sizes="16x16 32x32">
-<title>CreatureVerse</title>
+<title>CreatureVerse Beta</title>
 <h1 align="center"><img src="data/img/ui/creatureverse.png" alt="CreatureVerse" height="100" width="500" /></h1>
+<div style="position:relative; left:145px; top:-55px;"><h2 align="center"><i>Beta</i></h2></div>
 </head>
 
 <body>
@@ -16,15 +17,19 @@ A story driven narrative based solely on the choices you make here. Here you can
 </p>
 
 <p class="warning-text">
+Warning: This is a live work in progress build of CreatureVerse, it contains unfinished content and potential spoilers! DO NOT PROCEED PAST THIS POINT IF YOU DO NOT WISH TO BE SPOILED!!
+</p>
+
+<p class="warning-text">
 This website uses cookies to function. By continuing to use the site, you accept saving them to your computer. The cookies we use are purely for functional purposes. We do not use cookies for targeted advertisement, tracking info, or transformation.
 </p>
 
 <p align="center">
 
-<button class="btn" onclick="myFunction()" ><img src="data/img/ui/play_game.png" alt="Play Game" height="50" width="230"></button>
+<button class="btn" onclick="playgame()" ><img src="data/img/ui/play_game.png" alt="Play Game" height="50" width="230"></button>
 
 <script>
-function myFunction() {
+function playgame() {
   var r = confirm("Warning: Before progressing further, please read the following: This is a Narrative driven story that has been made to be realistic, as such there is a heavy presence of violence, gore, torture and other NSFW themes. It is strongly recommended that anybody not accustomed to these should not progress further as some scenes may cause distress!");
   if (r == true) {
 	window.location.href = "data/species.html";
@@ -53,7 +58,7 @@ function myFunction() {
 
 <p>
 <b><i>
-<a href="https://github.com/UndeadNightFury/creatureverse/archive/master.zip"><img src="data/img/ui/download.png" alt="Download" height="40" width="250" /></a>
+<a href="https://github.com/UndeadNightFury/creatureverse-beta/archive/beta.zip"><img src="data/img/ui/download.png" alt="Download" height="40" width="250" /></a>
 </b></i>
 </p>
 
@@ -63,7 +68,7 @@ function myFunction() {
 
 <p class="small-text" align="left">
 <i>
-Version: Alpha Dev Build: 0.2.0.1
+Version: Alpha Dev Build: 0.2.0.1 Live Beta
 </i>
 </p>
 

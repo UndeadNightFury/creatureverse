@@ -21,6 +21,10 @@ a{
 	color: green;
 }
 
+h2{
+    color: orange;
+}
+
 .small-text {
 	font-size: 10pt;
 }
