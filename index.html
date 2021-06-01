@@ -4,6 +4,7 @@
 <link rel="icon" href="data/img/ui/icon.png" type="image/png" sizes="16x16 32x32">
 <title>CreatureVerse</title>
 <h1 align="center"><img src="data/img/ui/creatureverse.png" alt="CreatureVerse" height="100" width="500" /></h1>
+<script type="text/javascript" src="js/play_game.js"></script>
 </head>
 
 <body>
@@ -15,28 +16,13 @@
 A story driven narrative based solely on the choices you make here. Here you can become any species you imagine. Wanna be a dragon finding food and love? Here you can. Wanna be a Werewolf on the prowl for your pack? Here you can. You can even die and become an undead zombie if you wanted to. CreatureVerse is a Work-In-Progress and will always have new content added on, be sure to check in often to explore new stories.
 </p>
 
-<p class="warning-text">
-This website uses cookies to function. By continuing to use the site, you accept saving them to your computer. The cookies we use are purely for functional purposes. We do not use cookies for targeted advertisement, tracking info, or transformation.
-</p>
-
 <p align="center">
 
-<button class="btn" onclick="myFunction()" ><img src="data/img/ui/play_game.png" alt="Play Game" height="50" width="230"></button>
+<button class="btn" onclick="playgame()" ><img src="data/img/ui/play_game.png" alt="Play Game" height="50" width="230"></button>
 
-<script>
-function myFunction() {
-  var r = confirm("Warning: Before progressing further, please read the following: This is a Narrative driven story that has been made to be realistic, as such there is a heavy presence of violence, gore, torture and other NSFW themes. It is strongly recommended that anybody not accustomed to these should not progress further as some scenes may cause distress!");
-  if (r == true) {
-	window.location.href = "data/species.html";
-  } else {
-  }
-}
+</p>
 
 </script>
-</p>
-
-<p align="center">
-<a href="inferno/home.html">My Website</a>
 </p>
 
 <p>
@@ -45,6 +31,10 @@ function myFunction() {
 
 <p>
 <a href="https://discord.gg/sRvHD3k"><img src="data/img/ui/discord.png" alt="Discord" height="40" width="200" /></a>
+</p>
+
+<p>
+<a href="https://twitter.com/CreatureVerse"><img src="data/img/ui/twitter.png" alt="Twitter" height="40" width="200" /></a>
 </p>
 
 <p>
@@ -63,7 +53,7 @@ function myFunction() {
 
 <p class="small-text" align="left">
 <i>
-Version: Alpha Dev Build: 0.2.0.0
+Version: Alpha Dev Build: 0.2.0.0.1
 </i>
 </p>
 
@@ -71,23 +61,16 @@ Version: Alpha Dev Build: 0.2.0.0
 <a href="mailto:support@creatureverse.net"><img src="data/img/ui/report_bug.png" height="20" width="150" /></a>
 </p>
 
+<div class="cookie-banner">
+<p>This website uses cookies to function. By continuing to use the site, you accept saving them to your computer. The cookies we use are purely for functional purposes. We do not use cookies for targeted advertisement, tracking info, or transformation.</p>
+
+<button class="cookie-btn">Accept</button>
+</div>
+
+<script src="js/banner.js"></script>
 
 <p class="disclaimer-text" align="center">
 <i><b>Disclaimer:</b> Some of the species featured here in CreatureVerse are the intellectual properties of Metro-Goldwyn-Mayer, 20th Century Fox, DreamWorks Studios, Universal Studios, Hasbro, Blizzard Studios and the BBC. As such I do not profit from these properties and all use as such is purely for entertainment purposes. This game is not endorsed by the trademark owners.</i>
 </p>
-<div id="cookie-banner" style="display: none">
-<p>
-    By using our website, you agree to our 
-    <a href="">cookie policy</a>
-	<button class="close">&times;</button>
-  </p>
-</div>
-<script>
-if (localStorage.getItem('cookieSeen') != 'shown') {
-  document.getElementById('cookie-banner').style.display = "none";
-  localStorage.setItem('cookieSeen','shown');
-}
-})
-</script>
 </body>
 </html>
