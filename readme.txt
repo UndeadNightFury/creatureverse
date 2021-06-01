@@ -17,7 +17,6 @@ Tyrannosaurus Rex
 Great Wyrm
 ---
 {Planed Chnages}
-Official Icon
 Cookie Banner
 New Path System
 JavaScript Overhaul
