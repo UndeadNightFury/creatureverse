@@ -21,6 +21,13 @@ a{
 	color: green;
 }
 
+h3{
+    font-family: Starcraft, Verdana, sans-serif;
+    font-size: 34pt;
+    color: orange;
+    font-style: italic;
+}
+
 .small-text {
 	font-size: 10pt;
 }
