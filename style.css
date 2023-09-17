@@ -81,6 +81,11 @@ h3{
 	width: 5%;
 }
 
+.beta {content:url(data/img/ui/beta.png);
+    width: 5%;
+}
+
+
 #sfw-link{
 	font-size: 12pt;
 }
