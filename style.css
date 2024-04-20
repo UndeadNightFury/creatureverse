@@ -31,7 +31,7 @@ li{
 h1{
 	font-family: Starcraft, Verdana, sans-serif;
 	font-style:italic;
-	color: chocolate;
+	color: #d2691e;
 	/*line-height: 0.25;*/
 }
 
@@ -217,10 +217,10 @@ h4{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #eee;
+  background-color: black;
   border-radius: 5px;
   box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
-  
+  font-family: Cascadia, Verdana, Sans-serif;
   transition: 400ms;
 }
 
@@ -234,12 +234,14 @@ h4{
 }
 
 .cookie-btn {
-	background: #e84118;
-	border: 0;
-	color: #f5f6fa;
+	background: #8f3f1180;
+	border: 3;
+	border-color: transparent;
+	color: #006400;
 	padding: 12px 48px;
 	font-size: 18px;
 	margin-bottom: 8px;
 	border-radius: 8px;
 	cursor: pointer;
+	font-family: Starcraft, Verdana, Sans-serif;
 }
