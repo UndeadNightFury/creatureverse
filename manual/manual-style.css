@@ -65,6 +65,13 @@ ol {
 	background-color: #00000080;
 }
 
+.sublink{
+	color: #800000;
+	font-family: Cascadia;
+	padding: 3px 3px;
+	background-color: #00000090;
+}
+
 .top{
 	font-family: Verdana, sans-serif;
 	font-size: 18pt;
