@@ -26,8 +26,6 @@ This is still a work in progress and thus you are currently unable to officially
 </p>
 </div>
 
-<p align="right"><a href="#top">Top of Page</a></p>
-
 <div id="rules"></div>
 <h1>Rules</h1>
 <div class="large-text">
@@ -35,8 +33,6 @@ This is still a work in progress and thus you are currently unable to officially
   <li>Havent figured out if there will be any special rules for this yet!</li>
 </ol>
 </div>
-
-<p align="right"><a href="#top">Top of Page</a></p>
 
 <div id="submit"></div>
 <h1>How to submit</h1>
@@ -52,6 +48,28 @@ Currently there is no way to do this without contacting me via the the CreatureV
 I havent gotten the template ready yet!
 </div>
 
-<p align="right"><a href="#top">Top of Page</a></p>
+<button onclick="topFunction()" id="topbtn" title="Go to top">Top</button>
+
+<script>
+	// Get the button
+	let mybutton = document.getElementById("topbtn");
+	
+	// When the user scrolls down 20px from the top of the document, show the button
+	window.onscroll = function() {scrollFunction()};
+	
+	function scrollFunction() {
+	  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+		mybutton.style.display = "block";
+	  } else {
+		mybutton.style.display = "none";
+	  }
+	}
+	
+	// When the user clicks on the button, scroll to the top of the document
+	function topFunction() {
+	  document.body.scrollTop = 0;
+	  document.documentElement.scrollTop = 0;
+	}
+</script>
 
 </html>

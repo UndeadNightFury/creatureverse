@@ -28,8 +28,6 @@ So you want to submit your own page to the story? Well there are a few rules and
 </p>
 </div>
 
-<p align="right"><a href="#top">Top of Page</a></p>
-
 <div id="rules"></div>
 <h1>Rules</h1>
 <div class="large-text">
@@ -39,8 +37,6 @@ So you want to submit your own page to the story? Well there are a few rules and
   <li>No AI Generated Text (if caught you WILL be blacklisted from ever submitting again!!</li>
 </ol>
 </div>
-
-<p align="right"><a href="#top">Top of Page</a></p>
 
 <div id="submit"></div>
 <h1>How to submit</h1>
@@ -64,7 +60,29 @@ Page Content: (Example: You walk through the door.)
 Page Choices(Optional): (Example: Walk to the bed)
 </div>
 
-<p align="right"><a href="#top">Top of Page</a></p>
+<button onclick="topFunction()" id="topbtn" title="Go to top">Top</button>
+
+<script>
+	// Get the button
+	let mybutton = document.getElementById("topbtn");
+	
+	// When the user scrolls down 20px from the top of the document, show the button
+	window.onscroll = function() {scrollFunction()};
+	
+	function scrollFunction() {
+	  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+		mybutton.style.display = "block";
+	  } else {
+		mybutton.style.display = "none";
+	  }
+	}
+	
+	// When the user clicks on the button, scroll to the top of the document
+	function topFunction() {
+	  document.body.scrollTop = 0;
+	  document.documentElement.scrollTop = 0;
+	}
+</script>
 
 <a href="../index.html"><img src="../data/img/ui/back.png" alt="Back" height="30" width="100" /></a>
 
