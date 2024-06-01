@@ -75,7 +75,17 @@ h4{
 	background-color: #00000080;
 }
 
+.writer {
+	font-family: Cascadia, Verdana, sans-serif;
+	padding: 0pt 3pt;
+	width: fit-content;
+	margin-left: auto;
+	font-size: 12pt;
+	background-color: #00000080;
+}
+
 .large-text {
+	width: fit-content;
 	font-size: 18pt;
 	font-family: Cascadia, monospace;
 	background-color: #00000080;
@@ -95,6 +105,16 @@ h4{
 	background-color: #00000080;
 }
 
+.warning-text-index {
+	margin: auto;
+	width: 75%;
+	font-size: 18pt;
+	font-style: italic;
+	font-weight: bold;
+	font-family: Cascadia;
+	background-color: #00000080;
+}
+
 .warning-text {
 	font-size: 18pt;
 	font-style: italic;
@@ -103,9 +123,17 @@ h4{
 	background-color: #00000080;
 }
 
+.nsfw {
+	font-size: 18pt;
+	font-style: italic;
+	font-weight: bold;
+	font-family: Cascadia;
+}
+
 .choose-text {
+	padding: 0px 5px;
 	margin: auto;
-	width: 50%;
+	width: fit-content;
 	font-size: 20pt;
 	background-color: #00000080;
 }
@@ -119,13 +147,27 @@ h4{
 
 .choose-text-species {
 	margin: auto;
-	width: 25%;
+	width: fit-content;
 	font-size: 20pt;
 	font-family: Starcraft;
 	background-color: #00000080;
 }
 
 .coming-soon {
+	height: 3%;
+	content:url(data/img/ui/coming_soon.png);
+}
+
+.coming-soon-link {
+	width: fit-content;
+	font-size: 20pt;
+	font-weight: bold;
+	font-style: italic;
+	font-family: Starcraft, Cascadia, monospace;
+	color: silver;
+}
+
+.coming-soon-old {
 	font-size: 16pt;
 	font-family: Cascadia, monospace;
 	font-style: italic;
@@ -139,7 +181,7 @@ h4{
 	font-weight: bold;
 }
 
-.rewrite {
+.wip {
 	margin: auto;
 	width: 50%;
 	font-size: 20pt;
@@ -162,6 +204,21 @@ h4{
 	font-style: italic;
 }
 
+.oc-link {
+	width: fit-content;
+	font-size: 18pt;
+	font-family: Cascadia, monospace;
+	color: #006400;
+}
+
+.hidden-link {
+	width: fit-content;
+	font-size: 18pt;
+	font-family: Cascadia, monospace;
+	text-decoration: none;
+	color: #006400;
+}
+
 .incomplete, .warning {
 	content:url(data/img/ui/warning.png);
 	width: 70%;
@@ -169,10 +226,19 @@ h4{
 
 .new {
 	content:url(data/img/ui/new.png);
-	width: 10%;
+	height: 3%;
 }
 
 .beta {content:url(data/img/ui/beta.png);
+    height: 3%;
+}
+
+.new-old {
+	content:url(data/img/ui/new.png);
+	width: 10%;
+}
+
+.beta-old {content:url(data/img/ui/beta.png);
     width: 10%;
 }
 
