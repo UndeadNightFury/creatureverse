@@ -21,7 +21,7 @@ p{
 a{
 	font-family: Cascadia, Verdana, sans-serif;
 	font-size: 18pt;
-	color: #800000;
+	color: #b30000;
 }
 
 h1,h2 {
@@ -33,13 +33,21 @@ h1,h2 {
 	/*line-height: 0.25;*/
 }
 
-h3,h4,h5,h6{
+h3,h5,h6{
 	display: table;
 	padding: 2px 5px;
 	font-family: Verdana, sans-serif;
 	color: chocolate;
 	/*line-height: 0.1;*/
-}	
+}
+
+h4{
+	font-size: 30px;
+	font-family: Cascadia, Verdana, sans-serif;
+	color: chocolate;
+	text-decoration: underline;
+	font-weight: bold;
+}
 
 h1 {
 	text-decoration: underline;
@@ -50,7 +58,8 @@ ol, ul {
 }*/
 
 ol {
-	color: transparent;
+	font-family: Starcraft, Verdana, sans-serif;
+	color: brown;
 }
 
 .large-text {
@@ -66,7 +75,7 @@ ol {
 }
 
 .sublink{
-	color: #800000;
+	color: #b30000;
 	font-family: Cascadia;
 	padding: 3px 3px;
 	background-color: #00000090;
@@ -87,6 +96,21 @@ ol {
 }
 
 .coming-soon {
+	width: 10%;
+	content:url(../data/img/ui/coming_soon.png);
+}
+
+.coming-soon-link {
+	width: fit-content;
+	font-size: 15;
+	font-style: italic;
+	text-decoration: none;
+	background-color: #00000080;
+	font-family: Starcraft, Cascadia, monospace;
+	color: silver;
+}
+
+.coming-soon-old {
 	font-size: 16pt;
 	font-style: italic;
 	font-weight: bold;

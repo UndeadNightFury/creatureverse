@@ -1,0 +1,66 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="oc.css">
+<link rel="icon" href="../../data/img/ui/icon.png" type="image/png" sizes="16x16 32x32">
+<title>Human OC</title>
+<p align="center"><a href="../../index.html"><img src="../../data/img/ui/creatureverse.png" alt="CreatureVerse" height="100" width="500" /></a></p>
+</head>
+
+<body>
+
+<div class="link" id="top">
+	<ol type="1">
+		<li><a href="#ben">Ben</a>
+			<ol type="a">
+				<li><a href="#ben-name">Name</a></li>
+				<li><a href="#ben-age">Age</a></li>
+				<li><a href="#ben-species">Species</a></li>
+				<li><a href="#ben-sex">Gender</a></li>
+				<li><a href="#ben-desc">Description</a></li>
+			</ol>
+		</li>
+	</ol>
+</div>
+
+<p align="left">
+<a href="../manual.html#oc-humans"><img src="../../data/img/ui/back.png" alt="Back" height="30" width="100" /></a>
+</p>
+
+<div id="Ben">
+<h1>Ben</h1>
+<div class="large-text-title" id="ben-name"><h2>Name: <i>Ben</i></h2></div>
+<div class="large-text-title" id="ben-age"><h2>Age: <i/>28</i></h2></div>
+<div class="large-text-title" id="ben-species"><h2>Species: <i>Human</i></h2></div>
+<div class="large-text-title" id="ben-sex"><h2>Gender: <i/>Male</i></h2></div>
+<div class="large-text" id="ben-desc"><h2>Description: <i/>With dark skin and a deep love of nature and animals, Ben at one point makes friends with a xenomorph worker drone who he named Sorlurs.</i></h2></div>
+
+<p align="left">
+<a href="../manual.html#oc-humans"><img src="../../data/img/ui/back.png" alt="Back" height="30" width="100" /></a>
+</p>
+
+<button onclick="topFunction()" id="topbtn" title="Go to top">Top</button>
+
+<script>
+	// Get the button
+	let mybutton = document.getElementById("topbtn");
+	
+	// When the user scrolls down 20px from the top of the document, show the button
+	window.onscroll = function() {scrollFunction()};
+	
+	function scrollFunction() {
+	  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+		mybutton.style.display = "block";
+	  } else {
+		mybutton.style.display = "none";
+	  }
+	}
+	
+	// When the user clicks on the button, scroll to the top of the document
+	function topFunction() {
+	  document.body.scrollTop = 0;
+	  document.documentElement.scrollTop = 0;
+	}
+</script>
+
+</body>
+</html>

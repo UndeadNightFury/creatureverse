@@ -23,7 +23,7 @@ a{
 	font-family: Cascadia, Verdana, sans-serif;
 	font-size: 15t;
 	font-style: bold;
-	color: #800000;
+	color: #b30000;
 }
 
 h1 {
@@ -48,8 +48,8 @@ ol, ul {
 }*/
 
 ol {
-	color: transparent;
-	width: 25%;
+	font-family: Starcraft, Verdana, sans-serif;
+	color: brown;
 }
 
 .link{
