@@ -110,10 +110,16 @@ ol {
 	color: silver;
 }
 
-.coming-soon-old {
+.note {
 	font-size: 16pt;
 	font-style: italic;
 	font-weight: bold;
+}
+
+.warning-text {
+	font-size:18pt;
+	font-style: italic;
+	font-weight:bold;
 }
 
 .warning {
