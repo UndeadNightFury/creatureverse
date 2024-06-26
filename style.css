@@ -123,6 +123,15 @@ h4{
 	background-color: #00000080;
 }
 
+.countdown {
+	width: fit-content;
+	font-size: 18pt;
+	font-style: italic;
+	font-weight: bold;
+	font-family: Cascadia;
+	background-color: #00000080;
+}
+
 .nsfw {
 	font-size: 18pt;
 	font-style: italic;
