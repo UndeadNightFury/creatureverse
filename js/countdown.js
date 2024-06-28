@@ -1,5 +1,5 @@
 // Set the date we're counting down to
-var countDownDate = new Date("July 25, 2024 15:37:25").getTime();
+var countDownDate = new Date("Aug 2, 2024").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {
@@ -26,12 +26,12 @@ var x = setInterval(function() {
   // If the count down is over, write some text 
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("countdown").innerHTML = "Release Day!";
+    document.getElementById("countdown").innerHTML = "CreatureVerse 5th Anniversary!";
   }
 
   // If the count down is over, write some text 
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("countdown-mobile").innerHTML = "Release Day!";
+    document.getElementById("countdown-mobile").innerHTML = "CreatureVerse 5th Anniversary!";
   }
 }, 1000);
