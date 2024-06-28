@@ -123,13 +123,134 @@ h4{
 	background-color: #00000080;
 }
 
-.countdown {
+.countdown-text {
+	padding-bottom: 1%;
+	position: fixed;
+	top: 14%;
+	right: 14%;
 	width: fit-content;
 	font-size: 18pt;
 	font-style: italic;
 	font-weight: bold;
-	font-family: Cascadia;
+	font-family: Verdana, sans-serif;
 	background-color: #00000080;
+}
+
+.countdown {
+	padding-left: 3px;
+	padding-right: 7px;
+	position: fixed;
+	top: 18%;
+	right: 17%;
+	width: fit-content;
+	font-size: 18pt;
+	font-style: italic;
+	font-weight: bold;
+	font-family: Starcraft, Verdana, sans-serif;
+}
+
+.countdown-mobile {
+	display: none;
+}
+
+.countdown-text-mobile {
+	display: none;
+}
+
+@media screen and (max-width: 1200px), screen and (min-width: 3840px) {
+	.countdown {
+		display: none;
+	}
+
+	.countdown-mobile {
+		display: block;
+		width: fit-content;
+		font-size: 18pt;
+		font-style: italic;
+		font-weight: bold;
+		font-family: Starcraft, Verdana, sans-serif;
+		background-color: #00000080;
+	}
+
+	.countdown-text-mobile {
+		display: block;
+		width: fit-content;
+		font-size: 18pt;
+		font-style: italic;
+		font-weight: bold;
+		font-family: Verdana, sans-serif;
+		background-color: #00000080;
+	}
+
+	.countdown-text {
+		display: none;
+	}
+	
+}
+
+.anniversary-text {
+	padding-bottom: 1%;
+	position: fixed;
+	bottom: 38%;
+	right: 6%;
+	width: fit-content;
+	font-size: 10pt;
+	font-style: italic;
+	font-weight: bold;
+	font-family: Verdana, sans-serif;
+	background-color: #00000080;
+}
+
+.anniversary {
+	padding-left: 3px;
+	padding-right: 7px;
+	position: fixed;
+	bottom: 35.7%;
+	right: 8.5%;
+	width: fit-content;
+	font-size: 18pt;
+	font-style: italic;
+	font-weight: bold;
+	font-family: Starcraft, Verdana, sans-serif;
+}
+
+.anniversary-mobile {
+	display: none;
+}
+
+.anniversary-text-mobile {
+	display: none;
+}
+
+@media screen and (max-width: 1200px), screen and (min-width: 3840px) {
+	.anniversary {
+		display: none;
+	}
+
+	.anniversary-mobile {
+		display: block;
+		width: fit-content;
+		font-size: 18pt;
+		font-style: italic;
+		font-weight: bold;
+		font-family: Starcraft, Verdana, sans-serif;
+		background-color: #00000080;
+	}
+
+	.anniversary-text-mobile {
+		display: block;
+		width: fit-content;
+		font-size: 18pt;
+		font-style: italic;
+		font-weight: bold;
+		font-family: Verdana, sans-serif;
+		background-color: #00000080;
+	}
+
+	.anniversary-text {
+		display: none;
+	}
+	
 }
 
 .nsfw {
