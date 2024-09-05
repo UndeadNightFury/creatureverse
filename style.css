@@ -258,7 +258,7 @@ h4{
 .countdown-text {
 	padding-bottom: 1%;
 	position: fixed;
-	bottom: 35%;
+	bottom: 50%;
 	right: 6%;
 	width: fit-content;
 	font-size: 18pt;
@@ -272,8 +272,8 @@ h4{
 	padding-left: 3px;
 	padding-right: 7px;
 	position: fixed;
-	bottom: 33.5%;
-	right: 12%;
+	bottom: 48%;
+	right: 7.5%;
 	width: fit-content;
 	font-size: 18pt;
 	font-style: italic;
