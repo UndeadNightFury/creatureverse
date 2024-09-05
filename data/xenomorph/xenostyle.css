@@ -1,0 +1,696 @@
+/*importing Starcraft font for use*/
+@import url("../../font/starcraft.css");
+@import url("../../font/cascadia.css");
+@import url("../../font/xenopose.css");
+
+body {
+	padding-left: 10%;
+	padding-right: 10%;
+}
+
+html{
+	background-image: url("../img/ui/background.png");
+	background-size: 100%;
+	background-color: black;
+}
+
+p{
+	color: #C6a66a;
+}
+
+a{
+	font-family: XenoPose, Verdana, sans-serif;
+	font-size: 24pt;
+	color: #545151;
+}
+
+li{
+	font-family: XenoPose, Verdana, sans-serif;
+	color: brown;
+}
+
+h1{
+	font-family: XenoPose, Verdana, sans-serif;
+	font-style:italic;
+	color: #d2691e;
+	/*line-height: 0.25;*/
+}
+
+h2{
+    color: orange;
+}
+
+h3{
+    font-family: XenoPose, Verdana, sans-serif;
+    font-size: 34pt;
+    color: orange;
+    font-style: italic;
+}
+
+h4{
+	font-family: Verdana, sans-serif;
+	font-style:italic;
+	color: chocolate;
+	text-decoration: underline;
+	/*line-height: 0.1;*/
+}
+
+.small-text {
+	display: table;
+	padding: 2px 5px;
+	font-size: 10pt;
+	background-color: #00000080;
+}
+
+.credits-btn {
+    position: fixed;
+    bottom: 7%;
+    left: 5.2%;
+}
+
+.fixed-bottom-left {
+    position: fixed;
+    bottom: 5% !important;
+    left: 5% !important;
+}
+
+.version {
+	width: fit-content;
+	font-style: italic;
+	font-size: 10pt;
+	font-family: sans-serif;
+	background-color: #00000080;
+}
+
+.disclaimer-text {
+	position: fixed;
+	bottom: 5%;
+	left: 25%;
+	margin-right: 25%;
+	font-size: 10pt;
+	font-family: Verdana;
+	background-color: #00000080;
+}
+
+.report {
+	position: fixed;
+	bottom: 5%;
+	right: 5%;
+}
+
+.disclaimer-text-mobile, .version-mobile, .report-mobile, .credits-btn-mobile {
+	display: none;
+}
+
+@media screen and (max-width: 1200px), screen and (min-width: 3840px) {
+	.credits-btn, .disclaimer-text, .fixed-bottom-left, .version-mobile, .report {
+		display: none;
+	}
+
+	.credits-btn-mobile {
+		display: block;
+		bottom: 7%;
+		left: 5.2%;
+	}
+	
+	.version-mobile {
+		display: block;
+		width: fit-content;
+		font-style: italic;
+		font-size: 10pt;
+		font-family: sans-serif;
+		background-color: #00000080;
+	}
+	
+	.disclaimer-text-mobile {
+		display: block;
+		font-size: 10pt;
+		font-family: Verdana;
+		background-color: #00000080;
+	}
+
+	.report-mobile {
+		display: block;
+	}
+}
+
+.writer {
+	font-family: XenoPose, Verdana, sans-serif;
+	padding: 0pt 3pt;
+	width: fit-content;
+	margin-left: auto;
+	font-size: 12pt;
+	background-color: #00000080;
+}
+
+.large-text {
+	width: fit-content;
+	font-size: 18pt;
+	font-family: XenoPose, monospace;
+	background-color: #00000080;
+}
+
+.sfw-text {
+	width: fit-content;
+	font-size: 18pt;
+	font-family: XenoPose, monospace;
+	background-color: #00000080;
+}
+
+.nsfw-text {
+	top: 0;
+	width: fit-content;
+	font-size: 18pt;
+	font-family: XenoPose, monospace;
+	background-color: #00000080;
+	display: none;
+}
+
+.large-text-link {
+	margin: auto;
+	width: 50%;
+	font-size: 18pt;
+	background-color: #00000080;
+}
+
+.title-text {
+	font-family: XenoPose, Verdana, sans-serif;
+	text-align: center;
+	font-style: italic;
+	font-weight: bold;
+	margin: auto;
+	width: fit-content;
+	font-size: 30pt;
+	color: #d2691e;
+	background-color: #00000080;
+	/*line-height: 0.25;*/
+}
+
+@media screen and (min-width: 1200px) {
+    .title-text {
+		font-size: 20pt;
+        width: fit-content;
+    }
+}
+
+.socialMobile {
+	display: none;
+}
+
+.social1 {
+	float: left;
+	position: fixed;
+	bottom: 35%;
+	left: 3%;
+}
+
+.social2 {
+	float: left;
+	position: fixed;
+	bottom: 16%;
+	left: 3%;
+}
+
+/*
+.social2 {
+	float: left;
+	position: fixed;
+	bottom: 29%;
+	left: 3%;
+}
+*/
+
+.social3 {
+	float: left;
+	position: fixed;
+	bottom: 13%;
+	right: 3%;
+}
+
+@media screen and (max-width: 1200px), screen and (min-width: 3840px) {
+    .socialMobile {
+        display: block;
+    }
+
+    .social1 {
+        display: none;
+    }
+
+    .social2 {
+        display: none;
+    }
+
+	.social3 {
+		display: none;
+	}
+}
+
+.countdown-text {
+	padding-bottom: 1%;
+	position: fixed;
+	bottom: 35%;
+	right: 6%;
+	width: fit-content;
+	font-size: 18pt;
+	font-style: italic;
+	font-weight: bold;
+	font-family: Verdana, sans-serif;
+	background-color: #00000080;
+}
+
+.countdown {
+	padding-left: 3px;
+	padding-right: 7px;
+	position: fixed;
+	bottom: 33.5%;
+	right: 12%;
+	width: fit-content;
+	font-size: 18pt;
+	font-style: italic;
+	font-weight: bold;
+	font-family: XenoPose, Verdana, sans-serif;
+}
+
+.countdown-mobile {
+	display: none;
+}
+
+.countdown-text-mobile {
+	display: none;
+}
+
+@media screen and (max-width: 1200px), screen and (min-width: 3840px) {
+	.countdown {
+		display: none;
+	}
+
+	.countdown-mobile {
+		display: block;
+		width: fit-content;
+		font-size: 18pt;
+		font-style: italic;
+		font-weight: bold;
+		font-family: XenoPose, Verdana, sans-serif;
+		background-color: #00000080;
+	}
+
+	.countdown-text-mobile {
+		display: block;
+		width: fit-content;
+		font-size: 18pt;
+		font-style: italic;
+		font-weight: bold;
+		font-family: Verdana, sans-serif;
+		background-color: #00000080;
+	}
+
+	.countdown-text {
+		display: none;
+	}
+	
+}
+
+.warning-text-index {
+	text-align: center;
+	margin: auto;
+	width: 80%;
+	font-size: 18pt;
+	font-style: italic;
+	font-weight: bold;
+	font-family: XenoPose;
+	background-color: #00000080;
+}
+
+.warning-text {
+	font-size: 18pt;
+	font-style: italic;
+	font-weight: bold;
+	font-family: XenoPose;
+	background-color: #00000080;
+}
+
+.nsfw {
+	font-size: 18pt;
+	font-style: italic;
+	font-weight: bold;
+	font-family: XenoPose;
+}
+
+.choose-text {
+	padding: 0px 5px;
+	margin: auto;
+	width: fit-content;
+	font-size: 20pt;
+	font-family: XenoPose, Verdana;
+	background-color: #00000080;
+}
+
+.choose-text-small {
+	margin: auto;
+	width: 16%;
+	font-size: 20pt;
+	background-color: #00000080;
+}
+
+.choose-text-species {
+	margin: auto;
+	width: fit-content;
+	font-size: 20pt;
+	font-family: XenoPose;
+	background-color: #00000080;
+}
+
+.coming-soon {
+	height: 3%;
+	content:url(../img/ui/coming_soon.png);
+}
+
+.coming-soon-link {
+	width: fit-content;
+	font-size: 20pt;
+	font-weight: bold;
+	font-style: italic;
+	font-family: XenoPose, monospace;
+	color: silver;
+}
+
+.coming-soon-old {
+	font-size: 16pt;
+	font-family: XenoPose, monospace;
+	font-style: italic;
+	font-weight: bold;
+}
+
+.realm {
+	font-size: 15pt;
+	font-family: XenoPose, monospace;
+	font-style: italic;
+	font-weight: bold;
+}
+
+.wip {
+	margin: auto;
+	width: 50%;
+	font-size: 20pt;
+	font-size: 16pt;
+	font-style: italic;
+	font-weight: bold;
+	color: grey;
+	background-color: #00000080;
+}
+
+.credits {
+	margin: auto;
+	width: fit-content;
+	font-size: 18pt;
+	background-color: #00000080;
+}
+
+.link {
+	font-size: 18pt;
+	font-style: italic;
+}
+
+.oc-link {
+	width: fit-content;
+	font-size: 18pt;
+	font-family: XenoPose, monospace;
+	color: #C6a66a;
+}
+
+.hidden-link {
+	width: fit-content;
+	font-size: 18pt;
+	font-family: XenoPose, monospace;
+	text-decoration: none;
+	color: #C6a66a;
+}
+
+.the_end {
+	content:url(../img/ui/the_end.png);
+	margin: auto;
+}
+
+.incomplete, .warning {
+	content:url(../img/ui/warning.png);
+	width: 70%;
+}
+
+.new {
+	content:url(../img/ui/new.png);
+	height: 3%;
+}
+
+.beta {content:url(../img/ui/beta.png);
+    height: 3%;
+}
+
+.new-old {
+	content:url(../img/ui/new.png);
+	width: 10%;
+}
+
+.beta-old {content:url(../img/ui/beta.png);
+    width: 10%;
+}
+
+.former {
+	content:url(../img/ui/former.png);
+	width: auto;
+}
+
+#sort {
+	list-style-type: none;
+	list-style-image: none;
+	list-style-position: outside;
+  }
+
+/* Cookie Banner */
+
+.btn {
+    background-color: transparent;
+	padding: 0;
+	border: none;
+	outline:none
+}
+
+.cookie-banner {
+  position: fixed;
+  bottom: -100%;
+  left: 10%;
+  right: 10%;
+  width: 80%;
+  padding: 5px 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #eee;
+  border-radius: 5px;
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.cookie-banner.active {
+  position: fixed;
+  bottom: 13%;
+  left: 5%;
+  right: 10%;
+  width: 40%;
+  padding: 5px 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: black;
+  border-radius: 5px;
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+  font-family: XenoPose, Verdana, Sans-serif;
+  transition: 400ms;
+}
+
+.close {
+  height: 20px;
+  background-color: #777;
+  border: none;
+  color: white;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.cookie-btn {
+	background: #8f3f1180;
+	border: 3;
+	border-color: transparent;
+	color: #006400;
+	padding: 12px 48px;
+	font-size: 18px;
+	margin-bottom: 8px;
+	border-radius: 8px;
+	cursor: pointer;
+	font-family: XenoPose, Verdana, Sans-serif;
+}
+
+/* Cookie Banner END */
+
+/* NSFW Toggle */
+
+.nsfw_align {
+	float: right;
+	position: fixed;
+	right: 100;
+	top: 130;
+}
+
+.switch {
+	position: relative;
+	display: inline-block;
+	width: 90px;
+	height: 34px;
+  }
+  
+  .switch input {display:none;}
+  
+  .slider {
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #2ab934;
+	-webkit-transition: .4s;
+	transition: .4s;
+	 border-radius: 34px;
+  }
+  
+  .slider:before {
+	position: absolute;
+	content: "";
+	height: 26px;
+	width: 26px;
+	left: 4px;
+	bottom: 4px;
+	background-color: white;
+	-webkit-transition: .4s;
+	transition: .4s;
+	border-radius: 50%;
+  }
+  
+  input:checked + .slider {
+	background-color: #ca2222;
+  }
+  
+  input:focus + .slider {
+	box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+	-webkit-transform: translateX(26px);
+	-ms-transform: translateX(26px);
+	transform: translateX(55px);
+  }
+  
+  /*------ ADDED CSS ---------*/
+  .slider:after
+  {
+   content:'SFW';
+   color: white;
+   display: block;
+   position: absolute;
+   transform: translate(-50%,-50%);
+   top: 50%;
+   left: 50%;
+   font-size: 10px;
+   font-family: XenoPose, Verdana, sans-serif;
+  }
+  
+  input:checked + .slider:after
+  {  
+	content:'NSFW';
+  }
+  
+/* This is the new CSS for mobile devices */
+@media screen and (max-width: 1200px) {
+	.nsfw_align {
+		float: right;
+		position: fixed;
+		left: 10;
+		top: 30;
+	}
+
+	.switch {
+	  width: 50px;
+	  height: 30px;
+	}
+  
+	.slider {
+	  width: 50px;
+	  height: 30px;
+	}
+  
+	.slider:before {
+	  height: 23px;
+	  width: 23px;
+	}
+  
+	input:checked + .slider:before {
+	  -webkit-transform: translateX(20px);
+	  -ms-transform: translateX(20px);
+	  transform: translateX(20px);
+	}
+  }
+
+  /*--------- END --------*/
+
+  /* NSFW Toggle END */
+
+  /* Drop Menu */
+
+  /*
+  .dropbtn {
+	background-color: #3498DB;
+	color: white;
+	padding: 16px;
+	font-size: 16px;
+	border: none;
+	cursor: pointer;
+  }
+  
+  .dropbtn:hover, .dropbtn:focus {
+	background-color: #2980B9;
+  }
+  
+  .dropdown {
+	position: fixed;
+	top: 10px;
+	left: 10px;
+	display: inline-block;
+  }
+  
+  .dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f1f1f1;
+	min-width: 160px;
+	overflow: auto;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+  }
+  
+  .dropdown-content a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+  }
+  
+  .dropdown a:hover {background-color: #ddd;}
+  
+  .show {display: block;}
+
+  @media screen and (max-width: 1200px) {
+	.dropdown { 
+		display: none;
+  }
+}
+*/
+
+/* Drop Menu END */

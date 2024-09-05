@@ -1,6 +1,7 @@
 /*importing Starcraft font for use*/
 @import url("../font/starcraft.css");
 @import url("../font/cascadia.css");
+@import url("../font/xenopose.css");
 
 body {
 	padding-left: 10%;
@@ -33,10 +34,27 @@ h1,h2 {
 	/*line-height: 0.25;*/
 }
 
+.h2-hive {
+	display: table;
+	padding: 2px 5px;
+	font-family: XenoPose, Starcraft, Verdana, sans-serif;
+	font-style:italic;
+	color: chocolate;
+	/*line-height: 0.25;*/
+}
+
 h3,h5,h6{
 	display: table;
 	padding: 2px 5px;
 	font-family: Verdana, sans-serif;
+	color: chocolate;
+	/*line-height: 0.1;*/
+}
+
+.h3-hive{
+	display: table;
+	padding: 2px 5px;
+	font-family: XenoPose, Verdana, sans-serif;
 	color: chocolate;
 	/*line-height: 0.1;*/
 }
@@ -62,9 +80,20 @@ ol {
 	color: brown;
 }
 
+.ol-hive {
+	font-family: XenoPose, Starcraft, Verdana, sans-serif;
+	color: brown;
+}
+
 .large-text {
 	font-size: 18pt;
 	font-family: Cascadia, monospace;
+	background-color: #00000080;
+}
+
+.large-text-hive {
+	font-size: 18pt;
+	font-family: XenoPose, Cascadia, monospace;
 	background-color: #00000080;
 }
 
@@ -72,6 +101,13 @@ ol {
 	font-style:normal;
 	width: 30%;
 	background-color: #00000080;
+}
+
+.link-hive{
+	font-style:normal;
+	width: 30%;
+	font-family: XenoPose;
+	color: #545151;
 }
 
 .sublink{

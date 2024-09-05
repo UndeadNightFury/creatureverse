@@ -1,6 +1,7 @@
 /*importing Starcraft font for use*/
 @import url("font/starcraft.css");
 @import url("font/cascadia.css");
+@import url("font/xenopose.css");
 
 body {
 	padding-left: 10%;
@@ -61,18 +62,86 @@ h4{
 	background-color: #00000080;
 }
 
-.small-text-version {
-	display: table;
-	padding: 2px 5px;
+.credits-btn {
+    position: fixed;
+    bottom: 7%;
+    left: 5.2%;
+}
+
+.fixed-bottom-left {
+    position: fixed;
+    bottom: 5% !important;
+    left: 5% !important;
+}
+
+.version {
+	width: fit-content;
+	font-style: italic;
 	font-size: 10pt;
 	font-family: sans-serif;
 	background-color: #00000080;
 }
 
 .disclaimer-text {
+	position: fixed;
+	bottom: 5%;
+	left: 25%;
+	margin-right: 25%;
 	font-size: 10pt;
 	font-family: Verdana;
 	background-color: #00000080;
+}
+
+.report {
+	position: fixed;
+	bottom: 5%;
+	right: 5%;
+}
+
+.about {
+	position: fixed;
+	bottom: 5%;
+	left: 13%;
+}
+
+.disclaimer-text-mobile, .version-mobile, .report-mobile, .credits-btn-mobile, .about-mobile {
+	display: none;
+}
+
+@media screen and (max-width: 1200px), screen and (min-width: 3840px) {
+	.credits-btn, .disclaimer-text, .fixed-bottom-left, .version-mobile, .report, .about {
+		display: none;
+	}
+
+	.credits-btn-mobile {
+		display: block;
+		bottom: 7%;
+		left: 5.2%;
+	}
+	
+	.version-mobile {
+		display: block;
+		width: fit-content;
+		font-style: italic;
+		font-size: 10pt;
+		font-family: sans-serif;
+		background-color: #00000080;
+	}
+	
+	.disclaimer-text-mobile {
+		display: block;
+		font-size: 10pt;
+		font-family: Verdana;
+		background-color: #00000080;
+	}
+
+	.report-mobile {
+		display: block;
+	}
+
+	.about-mobile {
+		display: block;
+	}
 }
 
 .writer {
@@ -91,6 +160,22 @@ h4{
 	background-color: #00000080;
 }
 
+.sfw-text {
+	width: fit-content;
+	font-size: 18pt;
+	font-family: Cascadia, monospace;
+	background-color: #00000080;
+}
+
+.nsfw-text {
+	top: 0;
+	width: fit-content;
+	font-size: 18pt;
+	font-family: Cascadia, monospace;
+	background-color: #00000080;
+	display: none;
+}
+
 .large-text-link {
 	margin: auto;
 	width: 50%;
@@ -99,34 +184,81 @@ h4{
 }
 
 .title-text {
-	margin: auto;
-	width: 43.7%;
-	font-size: 15pt;
-	background-color: #00000080;
-}
-
-.warning-text-index {
-	margin: auto;
-	width: 75%;
-	font-size: 18pt;
+	font-family: Starcraft, Verdana, sans-serif;
+	text-align: center;
 	font-style: italic;
 	font-weight: bold;
-	font-family: Cascadia;
+	margin: auto;
+	width: fit-content;
+	font-size: 30pt;
+	color: #d2691e;
 	background-color: #00000080;
+	/*line-height: 0.25;*/
 }
 
-.warning-text {
-	font-size: 18pt;
-	font-style: italic;
-	font-weight: bold;
-	font-family: Cascadia;
-	background-color: #00000080;
+@media screen and (min-width: 1200px) {
+    .title-text {
+		font-size: 20pt;
+        width: fit-content;
+    }
+}
+
+.socialMobile {
+	display: none;
+}
+
+.social1 {
+	float: left;
+	position: fixed;
+	bottom: 35%;
+	left: 3%;
+}
+
+.social2 {
+	float: left;
+	position: fixed;
+	bottom: 16%;
+	left: 3%;
+}
+
+/*
+.social2 {
+	float: left;
+	position: fixed;
+	bottom: 29%;
+	left: 3%;
+}
+*/
+
+.social3 {
+	float: left;
+	position: fixed;
+	bottom: 13%;
+	right: 3%;
+}
+
+@media screen and (max-width: 1200px), screen and (min-width: 3840px) {
+    .socialMobile {
+        display: block;
+    }
+
+    .social1 {
+        display: none;
+    }
+
+    .social2 {
+        display: none;
+    }
+
+	.social3 {
+		display: none;
+	}
 }
 
 .countdown-text {
 	padding-bottom: 1%;
 	position: fixed;
-	bottom: 50%;
+	bottom: 35%;
 	right: 6%;
 	width: fit-content;
 	font-size: 18pt;
@@ -140,7 +272,7 @@ h4{
 	padding-left: 3px;
 	padding-right: 7px;
 	position: fixed;
-	bottom: 48%;
+	bottom: 33.5%;
 	right: 12%;
 	width: fit-content;
 	font-size: 18pt;
@@ -188,6 +320,50 @@ h4{
 	
 }
 
+.warning-text-index {
+	position: fixed;
+	text-align: center;
+	margin: auto;
+	width: 20%;
+	font-size: 18pt;
+	font-style: italic;
+	font-weight: bold;
+	font-family: Cascadia;
+	background-color: #00000080;
+	bottom: 15%;
+	right: 5%;
+}
+
+.warning-text-index-mobile {
+	display: none;
+}
+
+@media screen and (max-width: 1200px), screen and (min-width: 3840px) {
+	.warning-text-index {
+		display: none;
+	}
+
+	.warning-text-index-mobile {
+		display: block;
+		text-align: center;
+		margin: auto;
+		width: 80%;
+		font-size: 18pt;
+		font-style: italic;
+		font-weight: bold;
+		font-family: Cascadia;
+		background-color: #00000080;
+	}
+}
+
+.warning-text {
+	font-size: 18pt;
+	font-style: italic;
+	font-weight: bold;
+	font-family: Cascadia;
+	background-color: #00000080;
+}
+
 .nsfw {
 	font-size: 18pt;
 	font-style: italic;
@@ -201,6 +377,15 @@ h4{
 	width: fit-content;
 	font-size: 20pt;
 	background-color: #00000080;
+}
+
+.choose-text-hive {
+	padding: 0px 5px;
+	margin: auto;
+	width: fit-content;
+	font-size: 20pt;
+	font-family: XenoPose;
+	color: #545151;
 }
 
 .choose-text-small {
@@ -259,9 +444,24 @@ h4{
 
 .credits {
 	margin: auto;
-	width: 48%;
+	width: fit-content;
 	font-size: 18pt;
 	background-color: #00000080;
+}
+
+.credits-hive {
+	margin: auto;
+	width: fit-content;
+	font-size: 18pt;
+	font-family: XenoPose;
+	color: #545151;
+}
+
+.credits-hive-text {
+	margin: auto;
+	width: fit-content;
+	font-size: 18pt;
+	font-family: XenoPose;
 }
 
 .link {
@@ -276,12 +476,24 @@ h4{
 	color: #006400;
 }
 
+.oc-link-hive {
+	width: fit-content;
+	font-size: 18pt;
+	font-family: XenoPose, monospace;
+	color: #006400;
+}
+
 .hidden-link {
 	width: fit-content;
 	font-size: 18pt;
 	font-family: Cascadia, monospace;
 	text-decoration: none;
 	color: #006400;
+}
+
+.the_end {
+	content:url(data/img/ui/the_end.png);
+	margin: auto;
 }
 
 .incomplete, .warning {
@@ -309,12 +521,16 @@ h4{
 
 .former {
 	content:url(data/img/ui/former.png);
-	width: 12%;
+	width: auto;
 }
 
-#sfw-link{
-	font-size: 12pt;
-}
+#sort {
+	list-style-type: none;
+	list-style-image: none;
+	list-style-position: outside;
+  }
+
+/* Cookie Banner */
 
 .btn {
     background-color: transparent;
@@ -340,10 +556,10 @@ h4{
 
 .cookie-banner.active {
   position: fixed;
-  bottom: 40px;
-  left: 10%;
+  bottom: 13%;
+  left: 5%;
   right: 10%;
-  width: 50%;
+  width: 40%;
   padding: 5px 14px;
   display: flex;
   align-items: center;
@@ -376,3 +592,170 @@ h4{
 	cursor: pointer;
 	font-family: Starcraft, Verdana, Sans-serif;
 }
+
+/* Cookie Banner END */
+
+/* NSFW Toggle */
+
+.nsfw_align {
+	float: right;
+	position: fixed;
+	right: 100;
+	top: 130;
+}
+
+.switch {
+	position: relative;
+	display: inline-block;
+	width: 90px;
+	height: 34px;
+  }
+  
+  .switch input {display:none;}
+  
+  .slider {
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #2ab934;
+	-webkit-transition: .4s;
+	transition: .4s;
+	 border-radius: 34px;
+  }
+  
+  .slider:before {
+	position: absolute;
+	content: "";
+	height: 26px;
+	width: 26px;
+	left: 4px;
+	bottom: 4px;
+	background-color: white;
+	-webkit-transition: .4s;
+	transition: .4s;
+	border-radius: 50%;
+  }
+  
+  input:checked + .slider {
+	background-color: #ca2222;
+  }
+  
+  input:focus + .slider {
+	box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+	-webkit-transform: translateX(26px);
+	-ms-transform: translateX(26px);
+	transform: translateX(55px);
+  }
+  
+  /*------ ADDED CSS ---------*/
+  .slider:after
+  {
+   content:'SFW';
+   color: white;
+   display: block;
+   position: absolute;
+   transform: translate(-50%,-50%);
+   top: 50%;
+   left: 50%;
+   font-size: 10px;
+   font-family: Verdana, sans-serif;
+  }
+  
+  input:checked + .slider:after
+  {  
+	content:'NSFW';
+  }
+  
+/* This is the new CSS for mobile devices */
+@media screen and (max-width: 1200px) {
+	.nsfw_align {
+		float: right;
+		position: fixed;
+		left: 10;
+		top: 30;
+	}
+
+	.switch {
+	  width: 50px;
+	  height: 30px;
+	}
+  
+	.slider {
+	  width: 50px;
+	  height: 30px;
+	}
+  
+	.slider:before {
+	  height: 23px;
+	  width: 23px;
+	}
+  
+	input:checked + .slider:before {
+	  -webkit-transform: translateX(20px);
+	  -ms-transform: translateX(20px);
+	  transform: translateX(20px);
+	}
+  }
+
+  /*--------- END --------*/
+
+  /* NSFW Toggle END */
+
+  /* Drop Menu */
+
+  /*
+  .dropbtn {
+	background-color: #3498DB;
+	color: white;
+	padding: 16px;
+	font-size: 16px;
+	border: none;
+	cursor: pointer;
+  }
+  
+  .dropbtn:hover, .dropbtn:focus {
+	background-color: #2980B9;
+  }
+  
+  .dropdown {
+	position: fixed;
+	top: 10px;
+	left: 10px;
+	display: inline-block;
+  }
+  
+  .dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f1f1f1;
+	min-width: 160px;
+	overflow: auto;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+  }
+  
+  .dropdown-content a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+  }
+  
+  .dropdown a:hover {background-color: #ddd;}
+  
+  .show {display: block;}
+
+  @media screen and (max-width: 1200px) {
+	.dropdown { 
+		display: none;
+  }
+}
+*/
+
+/* Drop Menu END */
