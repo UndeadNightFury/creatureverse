@@ -20,6 +20,7 @@ function getCookie(name) {
 }
 
 function updateNsfw() {
+  
   var nsfw = getCookie("NsfwEnabled");
   if (nsfw == "true") {
      console.log('NSFW');
@@ -43,8 +44,36 @@ function initNsfwCheckbox() {
 document.addEventListener('DOMContentLoaded', function () {
  var checkbox = document.querySelector('input[type="checkbox"]');
  checkbox.addEventListener('change', function () {
+  
+  
+  if (!localStorage.getItem("playgame")){
+    var r = confirm("Warning: Before progressing further, please read the following: This is a Narrative driven story that has been made to be realistic, as such there is a heavy presence of violence, gore, torture and other NSFW themes. It is strongly recommended that anybody not accustomed to these should not progress further as some scenes may cause distress!");
+   
+    if (r == false) {
+      checkbox.checked=false;
+      //Prevent nsfw things from appearing
+    
+    }
+    else{
+      localStorage.setItem("playgame", "true");
+    }
+  }
      setCookie("NsfwEnabled", checkbox.checked, 365); // set cookie to expire in 365 days
      updateNsfw();
  });
   initNsfwCheckbox();
 });
+
+/*
+
+document.addEventListener('DOMContentLoaded', function () {
+ var checkbox = document.querySelector('input[type="checkbox"]');
+ checkbox.addEventListener('change', function () {
+  
+     setCookie("NsfwEnabled", checkbox.checked, 365); // set cookie to expire in 365 days
+     updateNsfw();
+ });
+  initNsfwCheckbox();
+});
+
+*/ 
